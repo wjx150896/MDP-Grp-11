@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package ntu.mdpg1app.bluetooth;
+package ntu.mdpg11app.bluetooth;
 
 import android.Manifest;
 import android.app.ActionBar;
@@ -52,8 +52,8 @@ import android.widget.Toast;
 
 import com.example.android.common.logger.Log;
 
-import ntu.mdpg1app.MainActivity;
-import ntu.mdpg1app.R;
+import ntu.mdpg11app.MainActivity;
+import ntu.mdpg11app.R;
 
 /**
  * This fragment controls Bluetooth to communicate with other devices.

@@ -1,4 +1,4 @@
-package ntu.mdpg1app;
+package ntu.mdpg11app;
 
 import android.content.DialogInterface;
 import android.content.SharedPreferences;
@@ -17,13 +17,13 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
-import ntu.mdpg1app.bluetooth.BluetoothChatFragment;
-import ntu.mdpg1app.model.HexBin;
-import ntu.mdpg1app.model.IDblock;
-import ntu.mdpg1app.model.Map;
-import ntu.mdpg1app.model.Position;
-import ntu.mdpg1app.model.Robot;
-import ntu.mdpg1app.model.WayPoint;
+import ntu.mdpg11app.bluetooth.BluetoothChatFragment;
+import ntu.mdpg11app.model.HexBin;
+import ntu.mdpg11app.model.IDblock;
+import ntu.mdpg11app.model.Map;
+import ntu.mdpg11app.model.Position;
+import ntu.mdpg11app.model.Robot;
+import ntu.mdpg11app.model.WayPoint;
 
 public class MainActivity extends AppCompatActivity {
     GridLayout base_layout;

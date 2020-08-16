@@ -1,4 +1,4 @@
-package ntu.mdpg1app.model;
+package ntu.mdpg11app.model;
 
 public class WayPoint {
 	public static WayPoint wp=null;
