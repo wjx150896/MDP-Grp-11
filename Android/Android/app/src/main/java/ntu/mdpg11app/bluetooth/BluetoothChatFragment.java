@@ -52,7 +52,7 @@ import android.widget.Toast;
 
 import com.example.android.common.logger.Log;
 
-import ntu.mdpg11app.MainActivity;
+import ntu.mdpg11app.app.MainActivity;
 import ntu.mdpg11app.R;
 
 /**
@@ -335,7 +335,7 @@ public class BluetoothChatFragment extends Fragment {
     protected boolean sendMessage(String message) {
         // Check that we're actually connected before trying anything
         if (mChatService.getState() != BluetoothChatService.STATE_CONNECTED) {
-            Toast.makeText(getActivity(), R.string.not_connected, Toast.LENGTH_SHORT).show();
+            Toast.makeText(getActivity(), R.string.bt_not_connected, Toast.LENGTH_SHORT).show();
             return false;
         }
 
@@ -418,7 +418,7 @@ public class BluetoothChatFragment extends Fragment {
                             mConversationArrayAdapter.clear();
                             break;
                         case BluetoothChatService.STATE_CONNECTING:
-                            setStatus(R.string.title_connecting);
+                            setStatus(R.string.title_connecting_);
                             break;
                         case BluetoothChatService.STATE_LISTEN:
                         case BluetoothChatService.STATE_NONE:
@@ -480,7 +480,7 @@ public class BluetoothChatFragment extends Fragment {
                 } else {
                     // User did not enable Bluetooth or an error occurred
                     Log.d(TAG, "BT not enabled");
-                    Toast.makeText(getActivity(), R.string.bt_not_enabled_leaving,
+                    Toast.makeText(getActivity(), R.string.bt_not_enabled,
                             Toast.LENGTH_SHORT).show();
                     getActivity().finish();
                 }

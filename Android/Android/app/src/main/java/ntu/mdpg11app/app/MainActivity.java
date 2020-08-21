@@ -1,4 +1,4 @@
-package ntu.mdpg11app;
+package ntu.mdpg11app.app;
 
 import android.content.DialogInterface;
 import android.content.SharedPreferences;
@@ -17,6 +17,7 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
+import ntu.mdpg11app.R;
 import ntu.mdpg11app.bluetooth.BluetoothChatFragment;
 import ntu.mdpg11app.model.HexBin;
 import ntu.mdpg11app.model.IDblock;

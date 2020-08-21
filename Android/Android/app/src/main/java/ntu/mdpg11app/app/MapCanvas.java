@@ -1,6 +1,5 @@
-package ntu.mdpg11app;
+package ntu.mdpg11app.app;
 
-import android.app.Activity;
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Color;

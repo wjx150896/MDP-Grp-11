@@ -1,7 +1,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="ntu.mdpg11app.MainActivity">
+    tools:context="ntu.mdpg11app.app.MainActivity">
     <item
         android:id="@+id/secure_connect_scan"
         android:icon="@drawable/ic_bluetooth_black_24dp"
@@ -10,31 +10,31 @@
 
     <item
         android:id="@+id/discoverable"
-        android:title="@string/discoverable"
+        android:title="@string/mk_discoverable"
         app:showAsAction="never" />
     <item
         android:id="@+id/action_set_robot_position"
         android:checkable="true"
         android:orderInCategory="100"
-        android:title="@string/set_robot_position"
+        android:title="@string/set_rbt_pos"
         app:showAsAction="never" />
     <item
         android:id="@+id/action_set_waypoint"
         android:checkable="true"
         android:orderInCategory="100"
-        android:title="@string/set_waypoint"
+        android:title="@string/set_wp"
         app:showAsAction="never" />
     <item
         android:id="@+id/action_remove_waypoint"
         android:orderInCategory="100"
-        android:title="@string/remove_waypoint"
+        android:title="@string/remove_wp"
         app:showAsAction="never" />
     <item
         android:id="@+id/action_auto_update_map"
         android:checkable="true"
         android:checked="true"
         android:orderInCategory="100"
-        android:title="@string/auto_map"
+        android:title="@string/auto_update_map"
         app:showAsAction="never" />
     <item
         android:id="@+id/action_update_map"
@@ -44,19 +44,19 @@
     <item
         android:id="@+id/action_set_config_string1"
         android:orderInCategory="100"
-        android:title="@string/set_config1"
+        android:title="@string/set_config_1"
         app:showAsAction="never" />
     <item
         android:id="@+id/action_set_config_string2"
         android:orderInCategory="100"
-        android:title="@string/set_config2"
+        android:title="@string/set_config_2"
         app:showAsAction="never" />
     <item
         android:id="@+id/action_enable_swipe_input"
         android:checkable="true"
         android:checked="false"
         android:orderInCategory="100"
-        android:title="@string/swipe_input"
+        android:title="@string/swipe_input_gesture"
         app:showAsAction="never" />
     <item
         android:id="@+id/action_view_data_strings"
