@@ -4,7 +4,7 @@
     tools:context="ntu.mdpg11app.app.MainActivity">
     <item
         android:id="@+id/secure_connect_scan"
-        android:icon="@drawable/ic_bluetooth_black_24dp"
+        android:icon="@drawable/ic_bluetooth"
         android:title="@string/secure_connect"
         app:showAsAction="ifRoom" />
 
