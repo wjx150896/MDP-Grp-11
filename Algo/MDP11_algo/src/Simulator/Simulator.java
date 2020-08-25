@@ -14,7 +14,7 @@ public class Simulator {
 	private static void __run__() {
 		// create app frame
 		appFrame = new JFrame();
-		appFrame.setTitle("Group 12 Simulator");
+		appFrame.setTitle("Group 11 Simulator");
 		appFrame.setSize(new Dimension(690,700));
 		
 		Dimension Dim = Toolkit.getDefaultToolkit().getScreenSize();
