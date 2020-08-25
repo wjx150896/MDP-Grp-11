@@ -24,13 +24,13 @@ public class Simulator {
 		
 		
 		Container contentPane = appFrame.getContentPane();
-		//contentPane.add(_mapCards, BorderLayout.CENTER);
-        contentPane.add(buttons, BorderLayout.PAGE_START); 
+		
+       		contentPane.add(buttons, BorderLayout.PAGE_START); 
         
-        __iniButton__();
+       		__iniButton__();
         
-        appFrame.setVisible(true);
-        appFrame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        	appFrame.setVisible(true);
+        	appFrame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 		
 	}
 	
