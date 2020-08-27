@@ -1,6 +1,8 @@
-package Simulator;
-
+package simulator;
+import map.Map;
 import javax.swing.*;
+
+import map.Map;
 
 import java.awt.*;
 
@@ -10,7 +12,7 @@ public class Simulator {
 	private static JPanel mapCards = null;
 	private static JPanel buttons = null;
 	
-	private static Map map = new Map();
+	private static Map map = null;
 	
 	private static void __run__() {
 		// create app frame
@@ -18,30 +20,32 @@ public class Simulator {
 		appFrame.setTitle("Group 11 Simulator");
 		appFrame.setSize(new Dimension(690,700));
 		
-		Dimension Dim = Toolkit.getDefaultToolkit().getScreenSize();
-		appFrame.setLocation(Dim.width / 2 - appFrame.getSize().width /2, Dim.height /2 - appFrame.getSize().height / 2);
+		Dimension dimension = Toolkit.getDefaultToolkit().getScreenSize();
+		appFrame.setLocation(dimension.width / 2 - appFrame.getSize().width /2, dimension.height /2 - appFrame.getSize().height / 2);
 	
 		buttons = new JPanel();
+		mapCards = new JPanel(new CardLayout());
 		
-		Container contentPane = appFrame.getContentPane();
+		map = new Map();
 		
-       	contentPane.add(buttons, BorderLayout.PAGE_START); 
-        
+       	appFrame.getContentPane().add(buttons, BorderLayout.PAGE_START); 
+     	appFrame.getContentPane().add(mapCards, BorderLayout.CENTER );
+      	
        	__iniButton__();
        	
        	__iniMap__();
         
         appFrame.setVisible(true);
+        
         appFrame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 		
 	}
 	
 	public static void __iniMap__() {
-		mapCards = new JPanel(new CardLayout());
-		mapCards.add("map", map);
 		
-		CardLayout CL = ((CardLayout) mapCards.getLayout());
-		CL.show(mapCards, "map");
+		mapCards.add(map, "map");
+		CardLayout cl = ((CardLayout) mapCards.getLayout());
+		cl.show(mapCards, "map");
 		
 	}
 	

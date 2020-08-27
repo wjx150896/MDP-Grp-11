@@ -1,4 +1,4 @@
-package Simulator;
+package map;
 
 import javax.swing.*;
 import java.awt.*;

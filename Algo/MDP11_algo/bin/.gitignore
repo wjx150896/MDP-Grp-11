@@ -1,5 +1,8 @@
 /Simulator/
-/.classpath
-/.metadata/
-/.project
-/.settings/
+/androidx/
+/com/
+/ntu/
+/Map/
+/aihdiasd/
+/map/
+/simulator/
