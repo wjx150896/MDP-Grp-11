@@ -4,7 +4,6 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/sample_main_layout"
     android:background="@android:color/white"
     >
 
@@ -43,16 +42,16 @@
             android:layout_weight="40"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+
             <Button
-                android:text="Forward"
                 android:id="@+id/btn_forward"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#4DB6AC"
-                android:layout_marginTop="5dp"
                 android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
                 android:layout_marginRight="5dp"
-                />
+                android:background="#03A9F4"
+                android:text="Forward" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -65,23 +64,22 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
-                    android:layout_marginRight="3dp"
                     android:layout_marginTop="5dp"
+                    android:layout_marginRight="3dp"
                     android:layout_weight="0.5"
-                    android:background="#4DB6AC"
+                    android:background="#03A9F4"
                     android:text="Left" />
 
                 <Button
-                    android:text="Right"
                     android:id="@+id/btn_right"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="0.5"
-                    android:background="#4DB6AC"
-                    android:layout_marginTop="5dp"
                     android:layout_marginLeft="3dp"
+                    android:layout_marginTop="5dp"
                     android:layout_marginRight="5dp"
-                    />
+                    android:layout_weight="0.5"
+                    android:background="#03A9F4"
+                    android:text="Right" />
 
             </LinearLayout>
         </LinearLayout>
@@ -94,24 +92,24 @@
             android:orientation="vertical">
 
             <Button
-                android:text="EX"
                 android:id="@+id/btn_explr"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
                 android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
                 android:layout_marginRight="5dp"
-                android:background="#C6FF00"/>
+                android:background="#C6FF00"
+                android:text="Explore" />
 
             <Button
-                android:text="FP"
                 android:id="@+id/btn_fastest"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#C6FF00"
-                android:layout_marginTop="5dp"
                 android:layout_marginLeft="5dp"
-                android:layout_marginRight="5dp"/>
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:background="#C6FF00"
+                android:text="Fastest" />
 
         </LinearLayout>
 
@@ -121,17 +119,17 @@
             android:layout_weight="20"
             android:layout_height="match_parent"
             android:orientation="vertical">
+
             <Button
-                android:text="End EX"
                 android:id="@+id/btn_terminate"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="97"
-                android:background="#689EFF"
-                android:layout_marginTop="5dp"
                 android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
                 android:layout_marginRight="5dp"
-                />
+                android:layout_weight="97"
+                android:background="#F44336"
+                android:text="End EX" />
 
 
             </LinearLayout>

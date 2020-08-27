@@ -68,7 +68,7 @@
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp"
             android:layout_marginBottom="4dp"
-            android:text="@string/send" />
+            android:text="@string/Send" />
     </LinearLayout>
 
 </LinearLayout>

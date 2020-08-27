@@ -14,7 +14,7 @@ public class Simulator {
 	private static void __run__() {
 		// create app frame
 		appFrame = new JFrame();
-		appFrame.setTitle("Group 12 Simulator");
+		appFrame.setTitle("Group 11 Simulator");
 		appFrame.setSize(new Dimension(690,700));
 		
 		Dimension Dim = Toolkit.getDefaultToolkit().getScreenSize();
@@ -24,13 +24,13 @@ public class Simulator {
 		
 		
 		Container contentPane = appFrame.getContentPane();
-		//contentPane.add(_mapCards, BorderLayout.CENTER);
-        contentPane.add(buttons, BorderLayout.PAGE_START); 
+		
+       		contentPane.add(buttons, BorderLayout.PAGE_START); 
         
-        __iniButton__();
+       		__iniButton__();
         
-        appFrame.setVisible(true);
-        appFrame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        	appFrame.setVisible(true);
+        	appFrame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 		
 	}
 	
