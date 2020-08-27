@@ -3,13 +3,14 @@ package Simulator;
 import javax.swing.*;
 
 import java.awt.*;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
+
 
 public class Simulator {
 	private static JFrame appFrame = null;
 	private static JPanel mapCards = null;
 	private static JPanel buttons = null;
+	
+	private static Map map = new Map();
 	
 	private static void __run__() {
 		// create app frame
@@ -22,15 +23,25 @@ public class Simulator {
 	
 		buttons = new JPanel();
 		
-		
 		Container contentPane = appFrame.getContentPane();
 		
-       		contentPane.add(buttons, BorderLayout.PAGE_START); 
+       	contentPane.add(buttons, BorderLayout.PAGE_START); 
         
-       		__iniButton__();
+       	__iniButton__();
+       	
+       	__iniMap__();
         
-        	appFrame.setVisible(true);
-        	appFrame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        appFrame.setVisible(true);
+        appFrame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+		
+	}
+	
+	public static void __iniMap__() {
+		mapCards = new JPanel(new CardLayout());
+		mapCards.add("map", map);
+		
+		CardLayout CL = ((CardLayout) mapCards.getLayout());
+		CL.show(mapCards, "map");
 		
 	}
 	
@@ -48,11 +59,11 @@ public class Simulator {
 	private static void __addButtons__() {
 		__loadMapButton__("Load Map");
 		
-		__loadExplorationButton__("Exploration");
+		__loadExplorationButton__("Exploration-Hug");
 		
-		__loadFastestPathButton__("Fastest Path_Hug");
+		__loadExplorationButton__("Exploration-BFS");
 		
-		__loadFastestPathButton__("Fastest Path_BFS");
+		__loadFastestPathButton__("Fastest Path");
 	}
 	
 	private static void __loadMapButton__(String name) {
